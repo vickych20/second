@@ -19,7 +19,7 @@ export default function Second() {
           Choice category
         </h1>
       </div>
-      <div className="flex justify-between item-center py-6 gap-[2rem] text-[12px]">
+      <div className="flex justify-between item-center py-6 gap-[2rem] text-[12px] max-md:hidden">
         <div className="items-center">
           <div className="p-2 flex justify-center">
             <IoMdShirt className="text-[25px] text-[#1A4D2E]" />

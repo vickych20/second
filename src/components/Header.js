@@ -1,4 +1,5 @@
 import React from "react";
+import { FiHelpCircle } from 'react-icons/fi'
 
 export default function Header() {
   return (
@@ -14,7 +15,7 @@ export default function Header() {
             data-v-af735d2c=""
           ></img>
         </div>
-        <div>
+        <div className="max-md:hidden">
           <p>
             <ion-icon name="location-outline"></ion-icon>
             <select>
@@ -24,7 +25,7 @@ export default function Header() {
             </select>
           </p>
         </div>
-        <div className="border flex justify-between border-black-600 py-2 px-8 rounded-lg w-[400px]">
+        <div className="max-md:hidden border flex justify-between border-black-600 py-2 px-8 rounded-lg w-[400px]">
           <input
             type="search"
             className="border-none outline-none"
@@ -34,7 +35,7 @@ export default function Header() {
             <ion-icon name="search-outline"></ion-icon>
           </div>
         </div>
-        <div className="border border-none bg-[#d9d9d9] text-[#fff] px-3 py-2 bg-[#FB2576] text-white rounded-lg flex justify-center items-center]">
+        <div className="border max-md:hidden border-none bg-[#d9d9d9] text-[#fff] px-3 py-2 bg-[#FB2576] text-white rounded-lg flex justify-center items-center]">
           <div>
             <select className="bg-transparent text-black outline-none border-none">
               <option value="Category" className="text-white">
@@ -46,7 +47,7 @@ export default function Header() {
             </select>
           </div>
         </div>
-        <div className="flex justify-between items-center gap-[16px]">
+        <div className="flex max-md:hidden justify-between items-center gap-[16px]">
           <div>
             <ion-icon name="flower-outline"></ion-icon>
           </div>
@@ -104,19 +105,19 @@ export default function Header() {
       </div>
       <hr></hr>
 
-      <div className="flex justify-between items-center py-3 gap-4">
+      <div className="flex max-md:flex-col max-md:justify-center justify-between items-center py-3 gap-4">
         <div>
           <img
             src="https://img.freepik.com/free-vector/super-sale-banner-design-vector-illustration_1035-14931.jpg?size=338&ext=jpg&ga=GA1.2.79438395.1669983810"
             alt=""
-            className="w-[272px] rounded-lg"
+            className="w-[272px] rounded-lg max-md:h-[200px]"
           />
         </div>
-        <div>
+        <div className="max-md:w-[500px] m-auto max-sm:w-[300px]">
           <img
             src="https://img.freepik.com/premium-vector/vector-illustration-durga-puja-sale-banner_181203-10184.jpg?size=626&ext=jpg&ga=GA1.2.79438395.1669983810"
             alt=""
-            className="mr-[5rem] w-[800px] rounded-lg"
+            className="mr-[5rem]   w-[800px] rounded-lg"
           />
         </div>
       </div>
@@ -130,7 +131,7 @@ export default function Header() {
           <ion-icon name="arrow-forward-outline"></ion-icon>
         </div>
       </div>
-      <div className="flex justify-between items-center py-3 gap-5">
+      <div className="flex justify-between items-center py-3 gap-5 max-md:flex-col">
         <div>
           <img
             src="https://cdn1.vectorstock.com/i/1000x1000/69/10/flash-sale-discount-poster-online-banner-design-vector-23396910.jpg"
@@ -138,21 +139,17 @@ export default function Header() {
             className="w-[232px] rounded-lg"
           />
         </div>
-        <div className="w-[750px] border-2 rounded-lg h-[230px]">
-          <div className="flex justify-between p-2">
-            <div>
-              <p className="font-bold text-[#2C272E]">Bills and Utility</p>
-            </div>
-            <div className="border-2 border-[#000]-600 text-[9px] text-center px-4 py-2 rounded-lg gap-2 flex">
-              <div>
-                <input type="button" value="See All" />
-              </div>
-              <div>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-              </div>
-            </div>
+
+        <div className="w-[750px] border-2 rounded-lg h-[230px] max-md:w-[500px] max-sm:w-[300px]">
+          <div className="flex justify-between p-2 max-sm:w-[300px]">
+            <p className="font-bold text-[#2C272E]">Bills and Utility</p>
+            <button>
+              <span>See All</span>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
           </div>
-          <div className="flex justify-between items-center w-[88%] text-[12px] py-3 ml-[15px] relative bottom-[20px]">
+
+          <div className="p-2 mt-4 flex gap-[8px] items-center text-[12px] py-3 relative bottom-[20px] border-b-[1px] max-sm:hidden">
             <div>
               <p className="text-[#8600a1]">Blance</p>
             </div>
@@ -177,35 +174,36 @@ export default function Header() {
             <div>
               <p>Flash Sale</p>
             </div>
-            <div>{/* <p>Accessiores</p> */}</div>
           </div>
-          <hr></hr>
-          <div className="grid grid-cols-2 gap-x-3 px-4 py-2 m-2">
-            <div className="">
-              <p className="text-[9px] py-1">code transaction</p>
-              <div className="border-2 border-[#000]-600 px-8 p-2">
-                <input type="text" className="border-none outline-none" />
-              </div>
-            </div>
-            <div>
-              <p className="text-[9px] py-1">payment Amount</p>
-              <div className="border-2 border-black-600 px-8 p-2">
-                <input type="text" className="border-none outline-none" />
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-between items-center">
-            <div className="border border-black-600 bg-[#500579] text-[#fff] rounded-lg">
-              <input type="button" value="Purchase" className="text-[8px]" />
 
+          <div className="p-2 my-2 grid grid-cols-2 gap-x-[10px] ">
+            <p className="text-[9px] max-md:p-4">Code transaction</p>
+            <p className="text-[9px] max-md:p-4">payment Amount</p>
+            <input
+              type="text"
+              className="border-[1px] py-1 px-2 border-gray-500 rounded-md outline-none"
+              placeholder="Ex. JHGJ57HG547"
+            />
+
+            <input
+              type="text"
+              className="border-[1px] py-1 px-2 border-gray-500 rounded-md outline-none"
+              placeholder="$ 1000"
+            />
+          </div>
+
+          <div className="flex justify-between px-2 items-center max-md:hidden">
+            <button className="px-2 py-1 bg-purple-700 text-white rounded-md">
+              <span>Purchase</span>
               <ion-icon
                 className="mt-2"
                 name="caret-forward-outline"
               ></ion-icon>
-            </div>
-            <div>
-              <p>Help!!</p>
-            </div>
+            </button>
+            <p className="flex items-center gap-x-2 px-2 py-1 rounded-md">
+              <FiHelpCircle />
+              Help!!
+            </p>
           </div>
         </div>
       </div>

@@ -1,50 +1,102 @@
 import React from 'react'
+import {RiStarSLine} from 'react-icons/ri'
+import { MdLocationOn } from "react-icons/md";
+import Our from '../Our'
+import { useNavigate } from 'react-router-dom';
+
+
+
+const Card = ({ id, image, name, price, tag, sold,location, onClick }) => {
+
+  return (
+    <div className="flex justify-between items-center gap-[1rem] py-5  text-[13px] text-[#3C4048] leading-loose	rounded-lg" onClick={onClick}>
+      <div className="w-[180px] h-[280px] shadow-lg rounded-b-lg">
+        <div className="bg-[#d4d6db] flex justify-center items-center h-[130px] rounded-t-lg">
+          <img src={image} alt="" className=" h-[100%] flex items-center	" />
+        </div>
+        <div className="m-4">
+          <p className="text-[10px]">{tag}</p>
+          <p className="font-bold text-[#3C4048] text-[10px] leading-7">
+            {name}
+          </p>
+          <div className="flex justify-between items-center">
+            <div>
+              <p className="font-bold">${price} ${id}</p>
+            </div>
+            <div className="text-[22px] gap-[4px] flex">
+              <div className="flex item-center justify-center">
+                <RiStarSLine className="text-[#b78914]" />
+                <p className="text-[13px]">4.7</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-between items-center text-[12px] gap-[10px]">
+            <div className="flex justify-around items-center text-[#]">
+              <MdLocationOn className="text-[#d01df4]" />
+              <p>{location}</p>
+            </div>
+            <div>
+              <p>{sold}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+
+
+
+
 
 export default function Foryou() {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="font-bold text-[20px] text-[#413F42]">
         <p>Our Recommendation For You</p>
       </div>
+      <div className="flex justify-between items-center gap-[1rem] py-5 text-[13px] text-[#3C4048] leading-loose	rounded-lg max-md:grid max-md:grid-cols-2 max-sm:grid-cols-1">
+        {/* <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card /> */}
+        {Our.map((item) => (
+          <Card
+            onClick={() => navigate(`/our/${item.id}`)}
+            image={item.image}
+            id={item.id}
+            name={item.name}
+            price={item.price}
+            sold={item.sold}
+            tag={item.tag}
+            location={item.location}
+          />
+        ))}
+      </div>
+      <div className="flex justify-between items-center gap-[1rem]  text-[13px] text-[#3C4048] leading-loose	rounded-lg max-md:grid max-md:grid-cols-2">
+        {Our.map((item) => (
+          <Card
+            onClick={() => navigate(`/our/${item.id}`)}
+            image={item.image}
+            name={item.name}
+            price={item.price}
+            sold={item.sold}
+            tag={item.tag}
+            location={item.location}
+          />
+        ))}
+        {/* <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/> */}
+      </div>
 
-      <div className="flex justify-between items-center gap-[1rem] py-5  text-[13px] text-[#3C4048] leading-loose	rounded-lg">
-        <div className="w-[350px] h-[300px] shadow-lg">
-          <div className="bg-[#B2B2B2] flex justify-center items-center h-[130px]">
-            <img
-              src="https://cdn.dribbble.com/users/6493128/screenshots/16518878/media/68512eed1121680adfc665505de7289c.png?compress=1&resize=320x240&vertical=top"
-              alt=""
-              className=" h-[30%] flex items-center	"
-            />
-          </div>
-          <div className="m-2">
-            <p className="text-[10px]">property</p>
-            <p className="font-bold text-[#3C4048]">
-              Durable tupperware bottles (Black Version)
-            </p>
-            <div className="flex justify-between items-center">
-              <div className="flex gap-[8px]">
-                <p className="line-through">$20.00</p> <p>$10.00</p>
-              </div>
-              <div>
-                <p className="bg-[#e2d7d7] rounded-lg text-[#ea4444] px-2 text-[12px]">
-                  -50%
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-between items-center text-[12px] gap-[10px]">
-              <div>
-                <p className="font-bold">$ 112.70</p>
-              </div>
-              <div>
-                <p>130 sold</p>
-              </div>
-            </div>
-            <div className="flex justify-around items-center text-[#E0144C]">
-              <ion-icon className="" name="location-outline"></ion-icon>
-              <p>kota bandung</p>
-            </div>
-          </div>
-        </div>
+      {/* 
         <div className="w-[350px] h-[300px] shadow-lg">
           <div className="bg-[#B2B2B2] flex justify-center items-center h-[130px]">
             <img
@@ -382,7 +434,7 @@ export default function Foryou() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

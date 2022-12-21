@@ -7,10 +7,11 @@ import Today from "./components/Today";
 import Big from "./components/Big";
 import Foryou from "./components/Foryou";
 import LastSecond from "./components/LastSecond";
-
+import Full from "./components/Full";
+import './style.css'
 function App() {
   return (
-    <div className="m-4">
+    <div className="p-4 overflow-x-hidden">
 
       <Header />
       <Second />
@@ -18,9 +19,10 @@ function App() {
       <Product />
       <Product1 />
       <Today />
+      <Full/>
       <Big />
       <Foryou />
-      <LastSecond/>
+      <LastSecond />
       
     </div>
   );
