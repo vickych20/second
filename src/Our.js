@@ -49,18 +49,6 @@ const Our = [
     tag: "laptop",
     location: "delhi",
   },
-  {
-    id: 5,
-    name: "Dark king M2435 Mechanical keybord-free 31 key",
-    image:
-      "https://m.economictimes.com/thumb/msid-80006733,width-1200,height-900,resizemode-4,imgsize-161764/tech-istock.jpg",
-    desc: "talented leaders now emerging in Saudi Arabia. That is why we have invested heavily in our Graduates Opportunities in Work (",
-    price: 2344,
-    address: "New Delhi",
-    sold: 12,
-    rating: 4,
-    tag: "laptop",
-    location: "delhi",
-  },
+
 ];
 export default Our;

@@ -1,12 +1,10 @@
-import React from 'react'
-import {MdLocationOn} from 'react-icons/md'
+import React from "react";
+import { MdLocationOn } from "react-icons/md";
 import { RiStarSLine } from "react-icons/ri";
-import Keybord from '../Keybord';
+import Keybord from "../Keybord";
 import { useNavigate } from "react-router-dom";
 
-
-
-const Card = ({ image, name, price, tag, sold,location, onClick }) => {
+const Card = ({ image, name, price, tag, sold, location, onClick }) => {
   return (
     <div
       className="flex justify-between items-center gap-[1rem] py-5  text-[13px] text-[#3C4048] leading-loose	rounded-lg"
@@ -54,31 +52,36 @@ export default function Today() {
           Today is only for you
         </p>
       </div>
-      <div className="flex justify-between items-center gap-[1rem] py-5 text-[13px] text-[#777171] leading-loose	rounded-lg  max-md:grid max-md:grid-cols-2">
-        {/* <Card />
+
+      {/* <Card />
         <Card />
         <Card />
         <Card />
         <Card /> */}
+      <div className="flex flex-wrap justify-around min-w-full">
         {Keybord.map((item) => (
-          <Card
-            onClick={() => navigate(`/keybord/${item.id}`)}
-            image={item.image}
-            name={item.name}
-            price={item.price}
-            sold={item.sold}
-            tag={item.tag}
-            location={item.location}
-          />
+          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
+            <Card
+              onClick={() => navigate(`/keybord/${item.id}`)}
+              image={item.image}
+              name={item.name}
+              price={item.price}
+              sold={item.sold}
+              tag={item.tag}
+              location={item.location}
+            />
+          </div>
         ))}
       </div>
-      <div className="flex justify-between items-center gap-[1rem] py-5 text-[13px] text-[#e6eaf2] leading-loose	rounded-lg  max-md:grid max-md:grid-cols-2">
-        {/* <Card />
+
+      {/* <Card />
         <Card />
         <Card />
         <Card />
         <Card /> */}
+      <div className="flex flex-wrap justify-around min-w-full">
         {Keybord.map((item) => (
+           <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
           <Card
             onClick={() => navigate(`/keybord/${item.id}`)}
             image={item.image}
@@ -87,7 +90,8 @@ export default function Today() {
             sold={item.sold}
             tag={item.tag}
             location={item.location}
-          />
+            />
+            </div>
         ))}
       </div>
 
