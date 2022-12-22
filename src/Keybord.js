@@ -48,16 +48,6 @@ const Keybord = [
     tag: "keybord",
     location: "delhi",
   },
-  {
-    id: 5,
-    name: "Dark king M2435 Mechanical keybord-free 31 keys",
-    image: "https://www.venusrubbers.com/images/mercury-ball.jpg",
-    desc: "or football field to find more great stock photos and pictures",
-    price: 3243,
-    sold: 13,
-    rating: 5,
-    tag: "keybord",
-    location: "delhi",
-  },
+ 
 ];
 export default Keybord;

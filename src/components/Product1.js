@@ -2,7 +2,7 @@ import React from 'react'
 const Card = () => {
   return (
     <div>
-      <div className="flex justify-between items-center gap-[rem] ">
+      <div className="flex justify-between items-center ">
         <div className="w-[240px] h-[120px] shadow-lg border-2 border-[#293462]-600 px-4">
           <div>
             <div className="gap-2 m-1">
@@ -35,12 +35,24 @@ const Card = () => {
 
 export default function Product1() {
   return (
-    <div className="flex justify-between items-center gap-[1rem] py-5 text-[13px] text-[#777171] leading-loose	rounded-lg max-md:flex-col">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </div>
+    <>
+      <div className="w-full">
+        <div className="flex flex-wrap justify-around min-w-full">
+          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
+            <Card />
+          </div>
+          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
+            <Card />
+          </div>
+          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
+            <Card />
+          </div>
+          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
+            <Card />
+          </div>
+        </div>
+      </div>
+    </>
   );
+  
 }

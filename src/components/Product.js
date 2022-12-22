@@ -40,88 +40,21 @@ export default function Product() {
           </button>
         </div>
       </div>
-      <div>
-        <div className="flex justify-between items-center gap-[1rem] py-5 text-[13px] text-[#227C70] max-md:hidden ">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </div>
-
-        {/* <div className="w-[200px] h-[80px] bg-[#ADA2FF] rounded-md">
-          <div className="flex justify-around items-center py-3 text-white">
-            <div>
-              <ion-icon name="person-outline"></ion-icon>
-            </div>
-            <div>
-              <p>product</p>
-            </div>
+      <div className="w-full">
+        <div className="flex flex-wrap justify-around min-w-full">
+          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
+            <Card />
           </div>
-          <div className="flex justify-around items-center text-white">
-            <div>
-              <p>products</p>
-            </div>
-            <div>
-              <p>340 Stock</p>
-            </div>
+          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
+            <Card />
+          </div>
+          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
+            <Card />
+          </div>
+          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
+            <Card />
           </div>
         </div>
-        <div className="w-[200px] h-[80px] bg-[#00ABB3] rounded-md">
-          <div className="flex justify-around items-center py-3 text-white">
-            <div>
-              <ion-icon name="person-outline"></ion-icon>
-            </div>
-            <div>
-              <p>product</p>
-            </div>
-          </div>
-          <div className="flex justify-around items-center text-white">
-            <div>
-              <p>products</p>
-            </div>
-            <div>
-              <p>340 Stock</p>
-            </div>
-          </div>
-        </div>
-        <div className="w-[200px] h-[80px] bg-[#332FD0] rounded-md">
-          <div className="flex justify-around items-center py-3 text-white">
-            <div>
-              <ion-icon name="person-outline"></ion-icon>
-            </div>
-            <div>
-              <p>product</p>
-            </div>
-          </div>
-          <div className="flex justify-around items-center text-white">
-            <div>
-              <p>products</p>
-            </div>
-            <div>
-              <p>340 Stock</p>
-            </div>
-          </div>
-        </div>
-        <div className="w-[200px] h-[80px] bg-[#9A1663] rounded-md">
-          <div className="flex justify-around items-center py-3 text-white">
-            <div>
-              <ion-icon name="person-outline"></ion-icon>
-            </div>
-            <div>
-              <p>product</p>
-            </div>
-          </div>
-          <div className="flex justify-around items-center text-white">
-            <div>
-              <p>products</p>
-            </div>
-            <div>
-              <p>340 Stock</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> */}
       </div>
     </div>
   );
