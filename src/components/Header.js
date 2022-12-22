@@ -1,5 +1,6 @@
 import React from "react";
 import { FiHelpCircle } from 'react-icons/fi'
+import img1 from '../images/img1.jpg'
 
 export default function Header() {
   return (
@@ -131,81 +132,52 @@ export default function Header() {
           <ion-icon name="arrow-forward-outline"></ion-icon>
         </div>
       </div>
-      <div className="flex justify-between items-center py-3 gap-5 max-md:flex-col">
+      <div className="flex justify-around items-center py-3 gap-5 max-md:flex-col">
         <div>
           <img
-            src="https://cdn1.vectorstock.com/i/1000x1000/69/10/flash-sale-discount-poster-online-banner-design-vector-23396910.jpg"
+            src={img1}
             alt=""
             className="w-[232px] rounded-lg"
           />
         </div>
 
-        <div className="w-[750px] border-2 rounded-lg h-[230px] max-md:w-[500px] max-sm:w-[300px]">
-          <div className="flex justify-between p-2 max-sm:w-[300px]">
-            <p className="font-bold text-[#2C272E]">Bills and Utility</p>
-            <button>
-              <span>See All</span>
-              <ion-icon name="chevron-forward-outline"></ion-icon>
-            </button>
-          </div>
-
-          <div className="p-2 mt-4 flex gap-[8px] items-center text-[12px] py-3 relative bottom-[20px] border-b-[1px] max-sm:hidden">
-            <div>
-              <p className="text-[#8600a1]">Blance</p>
+        <div className='w-full px-5 grid gap-x-5 py-4' 
+    style={{gridTemplateColumns: "2fr 6fr"}}>
+        <img src={img1} alt="" className='w-[100%] rounded-lg '  />
+        <div className='w-full border-[1px] border-gray-300 py-3 rounded-md'>
+            <div className='flex justify-between py-1 px-5'>
+                <h2 className='text-xl font-bold'>Bills and Utility</h2>
+                <button className='flex items-center border-[1px] border-gray-600 pl-2 py-1 rounded-md'>
+                    <span>See All</span>
+                    <FiHelpCircle className='mx-2' />
+                </button>
             </div>
-            <div>
-              <p>Top Up</p>
+            <div className='flex gap-x-4 px-4 border-b-[1px] border-gray-300 py-2'>
+                <p className='text-gray-400'>Balance</p>
+                <p className='text-gray-400'>Top Up</p>
+                <p className='text-gray-400'>Internet</p>
+                <p className='text-gray-400'>Electiricity Tokens</p>
+                <p className='text-gray-400'>Tockets</p>
+                <p className='text-gray-400'>Data Packages</p>
+                <p className='text-gray-400'>Pulse</p>
+                <p className='text-gray-400'>Voucher</p>
             </div>
-            <div>
-              <p>Fashion</p>
+            <div className='grid grid-cols-2 gap-x-3 px-1 py-3'>
+                <div className='px-2 py-2'>
+                    <p className='my-2'>Code Transaction </p>
+                    <input placeholder='Ex: GJG876JHGBJHG898JKGB43' type="text" className='border-[1px] py-2 border-gray-400 px-2 w-full rounded-md outline-none' />
+                </div>
+                <div className='px-2 py-2'>
+                    <p className='my-2'>Payment Amount</p>
+                    <input placeholder='$ 8688' type="text" className='border-[1px] py-2 border-gray-400 w-full px-2 rounded-md outline-none' />
+                </div>
             </div>
-            <div>
-              <p>Shoes Man</p>
+            <div className='flex justify-between px-3 my-1'>
+                <button className='py-2 px-4 text-white bg-purple-700 rounded-md'>Purchace</button>
+                <p>Help</p>
             </div>
-            <div>
-              <p>Gadget</p>
-            </div>
-            <div>
-              <p>Computer</p>
-            </div>
-            <div>
-              <p>Laptop</p>
-            </div>
-            <div>
-              <p>Flash Sale</p>
-            </div>
-          </div>
-
-          <div className="p-2 my-2 grid grid-cols-2 gap-x-[10px] ">
-            <p className="text-[9px] max-md:p-4">Code transaction</p>
-            <p className="text-[9px] max-md:p-4">payment Amount</p>
-            <input
-              type="text"
-              className="border-[1px] py-1 px-2 border-gray-500 rounded-md outline-none"
-              placeholder="Ex. JHGJ57HG547"
-            />
-
-            <input
-              type="text"
-              className="border-[1px] py-1 px-2 border-gray-500 rounded-md outline-none"
-              placeholder="$ 1000"
-            />
-          </div>
-
-          <div className="flex justify-between px-2 items-center max-md:hidden">
-            <button className="px-2 py-1 bg-purple-700 text-white rounded-md">
-              <span>Purchase</span>
-              <ion-icon
-                className="mt-2"
-                name="caret-forward-outline"
-              ></ion-icon>
-            </button>
-            <p className="flex items-center gap-x-2 px-2 py-1 rounded-md">
-              <FiHelpCircle />
-              Help!!
-            </p>
-          </div>
         </div>
+    </div>
       </div>
     </div>
   );
