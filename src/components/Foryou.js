@@ -54,7 +54,7 @@ const Card = ({ id, image, name, price, tag, sold, location, onClick }) => {
 export default function Foryou() {
   const navigate = useNavigate();
   return (
-    <div className="py-[4%]">
+    <div className="px-[4%]">
       <div className="font-bold text-[20px] text-[#413F42]">
         <p className="px-[4%] xl:text-[25px] lg:text-[20px] md:text-[16px] sm:text-[14px] text-[14px]">
           Today is only for you

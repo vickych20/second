@@ -4,16 +4,16 @@ import { AiOutlineRight } from 'react-icons/ai'
 
 const Bills = () => {
   return (
-    <div className="w-full md:flex md:min-w-full max-lg:w-[50%] xl:hidden">
-      <div className="w-[225px] shrink-0 rounded-lg mr-2 max-md:flex-col max-md:justify-center ">
+    <div className="flex justify-around items-center w-full max-lg:w-[50%] xl:justify-around max-sm:grid grid-col max-sm:justify-center">
+      <div className="w-[225px] shrink-0 rounded-lg mr-2 max-md:justify-center">
         <img
           src={bannerimg3}
-          alt=""
-          className="flex justify-center h-full max-md:hidden"
+          alt="" className='my-8'
+    
         />
       </div>
 
-      <div className="grow shrink w-full   border-[1px] border-gray-300 py-2 rounded-md ml-2 max-sm:hidden">
+      <div className="xl:w-[800px] border-[1px] border-gray-300 py-2 rounded-md ml-2 max-sm:w-[300px] max-sm:h-[270px]">
         <div className="flex justify-between w-full px-5 py-1">
           <h2 className="text-xl font-bold">Bills and Utility</h2>
           <button className="flex items-center border-[1px] border-gray-600 pl-2 py-1 rounded-md">

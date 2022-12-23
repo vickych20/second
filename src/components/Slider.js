@@ -49,13 +49,13 @@ export default function Slider() {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="flex justify-between items-center text-[#413F42] max-md:hidden">
-        <div>
-          <p className="font-bold text-[20px] text-[#413F42]">
+      <div className="flex justify-between items-center text-[#413F42] max-md:hidden px-[4%]">
+        <div className="font-bold text-[20px] text-[#413F42]">
+          <p className="px-[4%] xl:text-[25px] lg:text-[20px] md:text-[16px] sm:text-[14px] text-[14px]">
             November super Flash sale
           </p>
         </div>
-        <div className="flex gap-[10px]">
+        <div className="flex gap-[10px] xl:hidden">
           End in: <p className="bg-[#5b14ce] text-white  p-1 rounded-md">04</p>:
           <p className="bg-[#5b14ce] text-white p-1 rounded-md">24</p>:
           <p className="bg-[#5b14ce] text-white p-1 rounded-md">39</p>
@@ -63,7 +63,6 @@ export default function Slider() {
       </div>
       <div className="flex flex-wrap justify-around min-w-full">
         {Products.map((item) => (
-          
           <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
             <Card
               onClick={() => navigate(`/product/${item.id}`)}
