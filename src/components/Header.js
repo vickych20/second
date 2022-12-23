@@ -1,15 +1,6 @@
 import React from "react";
-<<<<<<< HEAD
-import { FiHelpCircle } from 'react-icons/fi'
 import img1 from '../images/img1.jpg'
-=======
-import { FiHelpCircle } from "react-icons/fi";
-import img1 from "../images/img2222.jpg";
-<<<<<<< HEAD
 import Bills from "./Bills";
-=======
->>>>>>> 104eb69faea28da561698f4000a506583cfba6a4
->>>>>>> 72bc40d97d2d29cc403cca18f8475f22e0f07822
 
 export default function Header() {
   return (
@@ -144,7 +135,6 @@ export default function Header() {
           <ion-icon name="arrow-forward-outline"></ion-icon>
         </div>
       </div>
-<<<<<<< HEAD
       <div className="flex justify-around items-center py-3 gap-5 max-md:flex-col">
         <div>
           <img
@@ -152,14 +142,12 @@ export default function Header() {
             alt=""
             className="w-[232px] rounded-lg"
           />
-=======
 
       <Bills />
 
       {/* <div className="flex flex-wrap justify-around min-w-full max-xl:flex">
         <div>
           <img src={img1} alt="" className="w-[250px]" />
->>>>>>> 104eb69faea28da561698f4000a506583cfba6a4
         </div>
         <div>
           <div className="w-[750px] border-2 rounded-lg h-[230px] max-md:w-[300px] max-sm:w-[300px]">
@@ -171,7 +159,6 @@ export default function Header() {
               </button>
             </div>
 
-<<<<<<< HEAD
         <div className='w-full px-5 grid gap-x-5 py-4' 
     style={{gridTemplateColumns: "2fr 6fr"}}>
         <img src={img1} alt="" className='w-[100%] rounded-lg '  />
@@ -207,7 +194,6 @@ export default function Header() {
                 <button className='py-2 px-4 text-white bg-purple-700 rounded-md'>Purchace</button>
                 <p>Help</p>
             </div>
-=======
             <div className="p-2 mt-4 flex gap-[8px] items-center text-[12px] py-3 relative bottom-[20px] border-b-[1px] max-sm:hidden max-md:hidden max-md:p-4">
               <div>
                 <p className="text-[#8600a1]">Blance</p>
@@ -265,14 +251,10 @@ export default function Header() {
               </p>
             </div>
           </div>
->>>>>>> 104eb69faea28da561698f4000a506583cfba6a4
         </div>
-<<<<<<< HEAD
       </div> */}
-=======
     </div>
       </div>
->>>>>>> 72bc40d97d2d29cc403cca18f8475f22e0f07822
     </div>
   );
 }
