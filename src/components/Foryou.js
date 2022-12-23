@@ -1,12 +1,12 @@
 import React from 'react'
-import {RiStarSLine} from 'react-icons/ri'
+import { RiStarSLine } from 'react-icons/ri'
 import { MdLocationOn } from "react-icons/md";
 import Our from '../Our'
 import { useNavigate } from 'react-router-dom';
 
 
 
-const Card = ({ id, image, name, price, tag, sold,location, onClick }) => {
+const Card = ({ id, image, name, price, tag, sold, location, onClick }) => {
 
   return (
     <div className="flex justify-between items-center gap-[1rem] py-5  text-[13px] text-[#3C4048] leading-loose	rounded-lg" onClick={onClick}>
@@ -54,57 +54,56 @@ const Card = ({ id, image, name, price, tag, sold,location, onClick }) => {
 export default function Foryou() {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="py-4">
       <div className="font-bold text-[20px] text-[#413F42]">
-        <p>Our Recommendation For You</p>
+        <p className='px-[4%] xl:text-[25px] lg:text-[20px] md:text-[16px] sm:text-[14px] text-[14px]'>Our Recommendation For You</p>
       </div>
-      
-        {/* <Card />
+
+      {/* <Card />
         <Card />
         <Card />
         <Card />
         <Card /> */}
-              <div className="flex flex-wrap justify-around min-w-full">
-
+      <div className="flex flex-wrap justify-around min-w-full">
         {Our.map((item) => (
-           <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
-          <Card
-            onClick={() => navigate(`/our/${item.id}`)}
-            image={item.image}
-            id={item.id}
-            name={item.name}
-            price={item.price}
-            sold={item.sold}
-            tag={item.tag}
-            location={item.location}
-          />
-            </div>
+          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
+            <Card
+              onClick={() => navigate(`/our/${item.id}`)}
+              image={item.image}
+              id={item.id}
+              name={item.name}
+              price={item.price}
+              sold={item.sold}
+              tag={item.tag}
+              location={item.location}
+            />
+          </div>
         ))}
       </div>
-                   <div className="flex flex-wrap justify-around min-w-full">
+      <div className="flex flex-wrap justify-around min-w-full">
 
-      {Our.map((item) => (
+        {Our.map((item) => (
           <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
-          <Card
-            onClick={() => navigate(`/our/${item.id}`)}
-            image={item.image}
-            name={item.name}
-            price={item.price}
-            sold={item.sold}
-            tag={item.tag}
-            location={item.location}
-          />
+            <Card
+              onClick={() => navigate(`/our/${item.id}`)}
+              image={item.image}
+              name={item.name}
+              price={item.price}
+              sold={item.sold}
+              tag={item.tag}
+              location={item.location}
+            />
           </div>
-      ))}
-        </div>
-        {/* <Card/>
+        ))}
+      </div>
+      {/* <Card/>
         <Card/>
         <Card/>
         <Card/>
         <Card/> */}
-    
 
-    
+
+
     </div>
   );
 }

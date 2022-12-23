@@ -1,6 +1,7 @@
 import React from "react";
 import { FiHelpCircle } from "react-icons/fi";
 import img1 from "../images/img2222.jpg";
+import Bills from "./Bills";
 
 export default function Header() {
   return (
@@ -136,7 +137,9 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-around min-w-full max-xl:flex">
+      <Bills />
+
+      {/* <div className="flex flex-wrap justify-around min-w-full max-xl:flex">
         <div>
           <img src={img1} alt="" className="w-[250px]" />
         </div>
@@ -208,7 +211,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
