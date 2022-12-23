@@ -39,7 +39,7 @@ export default function Header() {
             <ion-icon name="search-outline"></ion-icon>
           </div>
         </div>
-        <div className="border max-md:hidden border-none bg-[#d9d9d9] text-[#fff] px-3 py-2 bg-[#FB2576] text-white rounded-lg flex justify-center items-center]">
+        <div className="border max-md:hidden border-none bg-[#d9d9d9] text-[#fff] px-3 py-2 rounded-lg flex justify-center items-center]">
           <div>
             <select className="bg-transparent text-black outline-none border-none">
               <option value="Category" className="text-white">
@@ -135,13 +135,13 @@ export default function Header() {
           <ion-icon name="arrow-forward-outline"></ion-icon>
         </div>
       </div>
-      <div className="flex justify-around items-center py-3 gap-5 max-md:flex-col">
-        <div>
-          <img
+      <div className="flex py-3 max-md:flex-col w-full">
+        <div className="w-full">
+          {/* <img
             src={img1}
             alt=""
             className="w-[232px] rounded-lg"
-          />
+          /> */}
 
       <Bills />
 
