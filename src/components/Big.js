@@ -14,7 +14,7 @@ const Card = () => {
           transform: "translate(-50%, 0)"
         }} />
       </div>
-      <div className="w-full text-center mt-6">
+      <div className="w-full mt-6 text-center">
         <div className="w-full text-[#6d6969]">
           <p>Super shop</p>
           <p className="text-[#332FD0] flex justify-center items-center">
@@ -55,6 +55,7 @@ export default function Big() {
     <div>
       <div className="w-full">
         <div className="flex flex-wrap justify-around min-w-full">
+          <Card />
           <Card />
           <Card />
           <Card />

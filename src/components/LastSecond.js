@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function LastSecond() {
   return (
-    <div>
+    <div className="p-[4%]">
       <div>
-        <p className="font-bold text-[25px] text-[#413F42]">
+        <p className="font-bold text-[25px] text-[#413F42] ">
           Now it easier to open your open{" "}
         </p>
         <p className="text-[12px]">
@@ -27,7 +27,7 @@ export default function LastSecond() {
         </div>
       </div>
       <hr></hr>
-      <div className="flex justify-between items-start my-4 max-md:grid max-md:grid-cols-2 justify-center items-start  ">
+      <div className="flex items-start justify-center justify-between my-4 max-md:grid max-md:grid-cols-2 ">
         <div className="flex flex-col gap-y-6 text-[#413F42]">
           <p className="font-bold text-[22px] text-[#000] hover:text-[#FB2576]">
             Product

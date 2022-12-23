@@ -49,6 +49,18 @@ const Our = [
     tag: "laptop",
     location: "delhi",
   },
+  {
+    id: 4,
+    name: "Dark king M2435 Mechanical keybord-free 31 key",
+    image: "https://kalingatv.com/wp-content/uploads/2020/02/IT-market.jpg",
+    desc: "Dark king M2435 Mechanical keybord-free 31 key",
+    address: "New Delhi",
+    price: 2344,
+    sold: 12,
+    rating: 4,
+    tag: "laptop",
+    location: "delhi",
+  },
 
 ];
 export default Our;
