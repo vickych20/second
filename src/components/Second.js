@@ -13,7 +13,7 @@ import { AiOutlineCar } from "react-icons/ai";
 
 export default function Second() {
   return (
-    <div>
+    <div className="py-[4%]">
       <div>
         <h1 className="font-bold text-[18px] text-[#2C272E]">
           Choice category

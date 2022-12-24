@@ -11,19 +11,19 @@ import Full from "./components/Full";
 import './style.css'
 function App() {
   return (
-    <div className="p-4 overflow-x-hidden">
-
-      <Header />
-      <Second />
-      <Slider />
-      <Product />
-      <Product1 />
-      <Today />
-      <Full/>
-      <Big />
-      <Foryou />
-      <LastSecond />
-      
+    <div className=" w-full flex justify-center p-4 overflow-x-hidden">
+      <div className="xl:w-[50%] w-full">
+        <Header />
+        <Second />
+        <Slider />
+        <Product />
+        <Product1 />
+        <Today />
+        <Full />
+        <Big />
+        <Foryou />
+        <LastSecond />
+      </div>
     </div>
   );
 }
