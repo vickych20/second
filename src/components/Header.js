@@ -109,24 +109,16 @@ export default function Header() {
       </div>
       <hr></hr>
 
-      <div className="flex justify-center w-full ">
-        
-      </div>
-      <div className="flex items-center justify-between gap-4 py-3 max-lg:justify-between max-xl:justify-between max-md:flex-col max-md:justify-center max-sm:flex-col">
-        <div className="w-[280px]">
-          <img
-            src="https://img.freepik.com/free-vector/super-sale-banner-design-vector-illustration_1035-14931.jpg?size=338&ext=jpg&ga=GA1.2.79438395.1669983810"
-            alt=""
-            className="w-[272px] rounded-lg max-md:h-[200px]"
-          />
-        </div>
-        <div className="max-md:w-[500px] max-sm:w-[300px]">
-          <img
-            src="https://img.freepik.com/premium-vector/vector-illustration-durga-puja-sale-banner_181203-10184.jpg?size=626&ext=jpg&ga=GA1.2.79438395.1669983810"
-            alt=""
-            className="mr-[5rem] w-[800px]  rounded-lg"
-          />
-        </div>
+      <div className="flex flex-wrap justify-center min-w-full gap-4 p-4 ">
+        <img
+          src="https://img.freepik.com/free-vector/super-sale-banner-design-vector-illustration_1035-14931.jpg?size=338&ext=jpg&ga=GA1.2.79438395.1669983810"
+          alt=""
+        />
+
+        <img
+          src="https://img.freepik.com/premium-vector/vector-illustration-durga-puja-sale-banner_181203-10184.jpg?size=626&ext=jpg&ga=GA1.2.79438395.1669983810"
+          alt=""
+        />
       </div>
       <div className="flex ml-[56rem] gap-[7px] text-[12px] xl:hidden">
         <div className="mt-[3px]">
@@ -146,9 +138,9 @@ export default function Header() {
             className="w-[232px] rounded-lg"
           /> */}
 
-      <Bills />
+          <Bills />
 
-      {/* <div className="flex flex-wrap justify-around min-w-full max-xl:flex">
+          {/* <div className="flex flex-wrap justify-around min-w-full max-xl:flex">
         <div>
           <img src={img1} alt="" className="w-[250px]" />
         </div>
@@ -256,7 +248,7 @@ export default function Header() {
           </div>
         </div>
       </div> */}
-    </div>
+        </div>
       </div>
     </div>
   );

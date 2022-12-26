@@ -58,7 +58,7 @@ export default function Today() {
         <Card />
         <Card />
         <Card /> */}
-      <div className="flex flex-wrap min-w-full r">
+      <div className="flex flex-wrap min-w-full">
         {Keybord.map((item) => (
           <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
             <Card
