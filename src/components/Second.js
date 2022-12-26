@@ -11,104 +11,73 @@ import { TbViewportNarrow } from "react-icons/tb";
 import { AiFillTrophy } from "react-icons/ai";
 import { AiOutlineCar } from "react-icons/ai";
 
+const choices = [
+  {
+    icon: <IoMdShirt className="text-[25px] text-[#1A4D2E]" />,
+    name: "Man Fashion"
+  }, {
+    icon: <FcElectronics className="text-[25px] text-[#36C2CB]" />,
+    name: "Gadget Electronics"
+  },
+  {
+    icon: <AiFillTrophy className="text-[25px] text-[#4D4C7D]" />,
+    name: "Man Fashion"
+  },
+  {
+    icon: <TbViewportNarrow className="text-[25px] text-[#2A2550]" />,
+    name: "Man Fashion"
+  }, 
+  {
+    icon: <HiViewGridAdd className="text-[25px] text-[#6E3CBC]" />,
+    name: "Man fashion"
+  },
+  {
+    icon: <MdViewComfy className="text-[25px] text-[#B000B9]" />,
+    name: "Man Fashion"
+  }, 
+  {
+    icon: <MdSportsBasketball className="text-[25px] text-[#FF5F7E]" />,
+    name: "Man Fashion"
+  },
+  {
+    icon: <MdSportsKabaddi className="text-[25px] text-[#FFAB4C]" />,
+    name: "Man Fashion"
+  }, 
+  {
+    icon: <SiEpicgames className="text-[25px] text-[#753188]" />,
+    name: "Man Fashion"
+  }, 
+  {
+    icon: <AiOutlineCar className="text-[25px] text-[#9AE66E]" />,
+    name: "Man Fashion"
+  },
+  {
+    icon: <HiViewGridAdd className="text-[25px] text-[#6E3CBC]" />,
+    name: "Man fashion"
+  },
+]
 export default function Second() {
   return (
-    <div className="py-[4%]">
+    <div className="">
       <div>
         <h1 className="font-bold text-[18px] text-[#2C272E]">
           Choice category
         </h1>
       </div>
-      <div className="2xl:p-[32px] flex flex-wrap justify-around min-w-full">
-        <div className="items-center">
-          <div className="flex justify-center p-2">
-            <IoMdShirt className="text-[25px] text-[#1A4D2E]" />
-          </div>
-          <div className="flex justify-center p-2 text-center">
-            <p>Man fashion</p>
-          </div>
-        </div>
 
-        <div className="items-center">
-          <div className="flex justify-center p-2">
-            <FcElectronics className="text-[25px] text-[#36C2CB]" />
-          </div>
-          <div className="flex justify-center p-2 text-center">
-            <p>Gadget Electronic</p>
-          </div>
-        </div>
-        <div className="items-center">
-          <div className="flex justify-center p-2">
-            <IoGameControllerSharp className="text-[25px] text-[#1363DF]" />
-          </div>
-          <div className="flex justify-center p-2 text-center">
-            <p>Man fashion</p>
-          </div>
-        </div>
-        <div className="items-center">
-          <div className="flex justify-center p-2">
-            <AiFillTrophy className="text-[25px] text-[#4D4C7D]" />
-          </div>
-          <div className="flex justify-center p-2 text-center">
-            <p>Man fashion</p>
-          </div>
-        </div>
-        <div className="items-center">
-          <div className="flex justify-center p-2">
-            <TbViewportNarrow className="text-[25px] text-[#2A2550]" />
-          </div>
-          <div className="flex justify-center p-2 text-center">
-            <p>Man fashion</p>
-          </div>
-        </div>
-        <div className="items-center">
-          <div className="flex justify-center p-2">
-            <HiViewGridAdd className="text-[25px] text-[#6E3CBC]" />
-          </div>
-          <div className="flex justify-center p-2 text-center">
-            <p>Computer & Laptop</p>
-          </div>
-        </div>
-        <div className="items-center">
-          <div className="flex justify-center p-2">
-            <MdViewComfy className="text-[25px] text-[#B000B9]" />
-          </div>
-          <div className="flex justify-center p-2 text-center">
-            <p>Gamming</p>
-          </div>
-        </div>
-        <div className="items-center">
-          <div className="flex justify-center p-2">
-            <MdSportsBasketball className="text-[25px] text-[#FF5F7E]" />
-          </div>
-          <div className="flex justify-center p-2 text-center">
-            <p>gaming</p>
-          </div>
-        </div>
-        <div className="items-center">
-          <div className="flex justify-center p-2">
-            <MdSportsKabaddi className="text-[25px] text-[#FFAB4C]" />
-          </div>
-          <div className="flex justify-center p-2 text-center">
-            <p>Property</p>
-          </div>
-        </div>
-        <div className="items-center">
-          <div className="flex justify-center p-2">
-            <SiEpicgames className="text-[25px] text-[#753188]" />
-          </div>
-          <div className="flex justify-center p-2 text-center">
-            <p>Kids Fashion</p>
-          </div>
-        </div>
-        <div className="items-center">
-          <div className="flex justify-center p-2">
-            <AiOutlineCar className="text-[25px] text-[#9AE66E]" />
-          </div>
-          <div className="flex justify-center p-2 text-center">
-            <p>Sports</p>
-          </div>
-        </div>
+      <div className="flex flex-wrap gap-3 justify-start  min-w-full my-4">
+        {choices.map((choice) => {
+            return (
+              <div className="flex flex-col items-center bg-gray-100 shadow-md py-3">
+                <div className="flex justify-center items-center rounded-[50%] p-2 w-[55px] h-[55px] bg-gray-200">
+                  {choice.icon}
+                </div>
+                <div className="flex justify-center p-2 text-center">
+                  <p>{choice.name}</p>
+                </div>
+              </div>
+            )
+          })}
       </div>
     </div>
   );

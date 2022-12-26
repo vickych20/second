@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function LastSecond() {
   return (
-    <div className="p-[4%]">
+    <div className="">
       <div>
         <p className="font-bold text-[25px] text-[#413F42] ">
           Now it easier to open your open{" "}

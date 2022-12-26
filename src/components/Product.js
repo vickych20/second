@@ -2,7 +2,7 @@ import React from 'react'
 const Card = () => {
   return (
     <div>
-       <div className="flex justify-around items-center gap-[2rem] text-[9px]">
+      <div className="flex justify-around items-center gap-[2rem] text-[9px]">
         <div className="w-[200px] h-[80px] bg-[#C539B4] rounded-md">
           <div className="flex items-center justify-around py-3 text-white">
             <div>
@@ -21,9 +21,9 @@ const Card = () => {
             </div>
           </div>
         </div>
-        </div>
+      </div>
     </div>
-    
+
   )
 }
 
@@ -44,19 +44,13 @@ export default function Product() {
       </div>
       <div className="w-full p-4">
         <div className="flex flex-wrap min-w-full gap-3">
-         
-            <Card />
-        
-          
-            <Card />
-          
-            <Card />
-          
-            <Card />
-          
-            <Card />
-          </div>
-        
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
     </div>
   );

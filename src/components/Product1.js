@@ -30,6 +30,7 @@ export default function Product1() {
           <Card />
           <Card />
           <Card />
+          <Card />
         </div>
       </div>
     </>

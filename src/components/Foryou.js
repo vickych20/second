@@ -60,12 +60,6 @@ export default function Foryou() {
           Today is only for
         </p>
       </div>
-
-      {/* <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card /> */}
       <div className="flex flex-wrap min-w-full r">
         {Our.map((item) => (
           <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
@@ -81,8 +75,7 @@ export default function Foryou() {
             />
           </div>
         ))}
-      </div>
-      <div className="flex flex-wrap min-w-full">
+
         {Our.map((item) => (
           <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
             <Card
@@ -96,12 +89,8 @@ export default function Foryou() {
             />
           </div>
         ))}
+     
       </div>
-      {/* <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/> */}
     </div>
   );
 }

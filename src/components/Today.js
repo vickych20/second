@@ -46,7 +46,7 @@ const Card = ({ image, name, price, tag, sold, location, onClick }) => {
 export default function Today() {
   const navigate = useNavigate();
   return (
-    <div className="py-4">
+    <div className="">
       <div className="font-bold text-[20px] text-[#413F42]">
         <p className="xl:text-[25px] lg:text-[20px] md:text-[16px] sm:text-[14px] text-[14px]">
           Today is only for you
@@ -72,15 +72,6 @@ export default function Today() {
             />
           </div>
         ))}
-      </div>
-     
-
-      {/* <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card /> */}
-      <div className="flex flex-wrap min-w-full">
         {Keybord.map((item) => (
           <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
             <Card
@@ -94,9 +85,13 @@ export default function Today() {
             />
           </div>
         ))}
+
       </div>
 
-      
+
+
+
+
     </div>
   );
 }

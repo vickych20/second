@@ -50,7 +50,7 @@ export default function Slider() {
   return (
     <div>
       <div className="flex justify-between
-        items-center text-[#413F42] max-md:hidden px-[4%]">
+        items-center text-[#413F42] max-md:hidden">
         <div className="font-bold text-[20px] text-[#413F42]">
           <p className="xl:text-[25px] lg:text-[20px] md:text-[16px] sm:text-[14px] text-[14px]">
             November super Flash sale

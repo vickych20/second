@@ -59,6 +59,18 @@ const Products = [
     rating: 4,
     tag: "mobile",
   },
+  {
+    id: 6,
+    name: "Dark king M2435 Mechanical keybord-free 31 key",
+    image:
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGFwdG9wJTIwY29tcHV0ZXJ8ZW58MHx8MHx8&w=1000&q=80",
+    desc: "lerem",
+    price: 2424,
+    address: "New Delhi",
+    sold: 12,
+    rating: 4,
+    tag: "mobile",
+  },
  
 ];
 

@@ -9,21 +9,28 @@ import Foryou from "./components/Foryou";
 import LastSecond from "./components/LastSecond";
 import Full from "./components/Full";
 import './style.css'
+import Bills from "./components/Bills";
 function App() {
   return (
-    <div className=" w-full flex justify-center p-4 overflow-x-hidden">
-      <div className="xl:w-[50%] w-full">
+    <div className=" w-full flex justify-center overflow-x-hidden">
+
+      <div className="2xl:w-[50%] w-full">
         <Header />
-        <Second />
-        <Slider />
-        <Product />
-        <Product1 />
-        <Today />
-        <Full />
-        <Big />
-        <Foryou />
-        <LastSecond />
+        <div className="px-4">
+          <Bills />
+          <Second />
+          <Slider />
+          <Product />
+          <Product1 />
+          <Today />
+          <Full />
+          <Big />
+          <Foryou />
+          <LastSecond />
+
+        </div>
       </div>
+
     </div>
   );
 }
