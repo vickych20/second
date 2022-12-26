@@ -38,15 +38,15 @@ export default function Source() {
   },[Our_id,Our])
 
   return (
-    <div className="flex justify-between items-center  m-10 max-md:flex-col">
+    <div className="flex items-center justify-between m-10 max-md:flex-col">
       <div className="w-1/2">
         <img
           src={p.image ? p.image : ""}
           alt=""
-          className="w-1/2 m-auto rounded-md max-md:w-[100%]"
+          className="w-1/2 m-auto rounded-md max-md:w-[100%] 2xl:w-[100%]"
         />
       </div>
-      <div className="w-1/2 leading-[2.5rem] max-md:flex-col">
+      <div className="max-2xl:grid grid-cols 2xl:m-[10rem] w-1/2 leading-[2.5rem] max-md:flex-col">
         <p className=" text-[#FF7000] font-bold rounded-md w-[150px] h-[20px] text-center my-4 max-md:flex-col">
           DEAL OF THE DAY
         </p>
