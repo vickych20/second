@@ -3,11 +3,8 @@ import img from '../images/img.png'
 
 export default function Full() {
   return (
-      <div className='flex justify-center items-center'>
-          <img src={img} alt="" className='w-[90%]' />
-          
-
-
+    <div className="flex flex-wrap justify-center min-w-full">
+      <img src={img} alt="" className="" />
     </div>
-  )
+  );
 }

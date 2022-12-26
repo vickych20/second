@@ -54,10 +54,10 @@ const Card = ({ id, image, name, price, tag, sold, location, onClick }) => {
 export default function Foryou() {
   const navigate = useNavigate();
   return (
-    <div className="px-[4%]">
+    <div className="">
       <div className="font-bold text-[20px] text-[#413F42]">
-        <p className="px-[4%] xl:text-[25px] lg:text-[20px] md:text-[16px] sm:text-[14px] text-[14px]">
-          Today is only for you
+        <p className="xl:text-[25px] lg:text-[20px] md:text-[16px] sm:text-[14px] text-[14px]">
+          Today is only for
         </p>
       </div>
 
@@ -66,7 +66,7 @@ export default function Foryou() {
         <Card />
         <Card />
         <Card /> */}
-      <div className="flex flex-wrap justify-around min-w-full">
+      <div className="flex flex-wrap min-w-full r">
         {Our.map((item) => (
           <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
             <Card
@@ -82,7 +82,7 @@ export default function Foryou() {
           </div>
         ))}
       </div>
-      <div className="flex flex-wrap justify-around min-w-full">
+      <div className="flex flex-wrap min-w-full">
         {Our.map((item) => (
           <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
             <Card

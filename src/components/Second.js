@@ -19,93 +19,93 @@ export default function Second() {
           Choice category
         </h1>
       </div>
-      <div className="flex justify-between item-center py-6 gap-[2rem] text-[12px] max-md:hidden">
+      <div className="2xl:p-[32px] flex flex-wrap justify-around min-w-full">
         <div className="items-center">
-          <div className="p-2 flex justify-center">
+          <div className="flex justify-center p-2">
             <IoMdShirt className="text-[25px] text-[#1A4D2E]" />
           </div>
-          <div className="p-2 flex text-center justify-center">
+          <div className="flex justify-center p-2 text-center">
             <p>Man fashion</p>
           </div>
         </div>
 
         <div className="items-center">
-          <div className="p-2 flex justify-center">
+          <div className="flex justify-center p-2">
             <FcElectronics className="text-[25px] text-[#36C2CB]" />
           </div>
-          <div className="p-2 flex text-center justify-center">
+          <div className="flex justify-center p-2 text-center">
             <p>Gadget Electronic</p>
           </div>
         </div>
         <div className="items-center">
-          <div className="p-2 flex justify-center">
+          <div className="flex justify-center p-2">
             <IoGameControllerSharp className="text-[25px] text-[#1363DF]" />
           </div>
-          <div className="p-2 flex text-center justify-center">
+          <div className="flex justify-center p-2 text-center">
             <p>Man fashion</p>
           </div>
         </div>
         <div className="items-center">
-          <div className="p-2 flex justify-center">
+          <div className="flex justify-center p-2">
             <AiFillTrophy className="text-[25px] text-[#4D4C7D]" />
           </div>
-          <div className="p-2 flex text-center justify-center">
+          <div className="flex justify-center p-2 text-center">
             <p>Man fashion</p>
           </div>
         </div>
         <div className="items-center">
-          <div className="p-2 flex justify-center">
+          <div className="flex justify-center p-2">
             <TbViewportNarrow className="text-[25px] text-[#2A2550]" />
           </div>
-          <div className="p-2 flex text-center justify-center">
+          <div className="flex justify-center p-2 text-center">
             <p>Man fashion</p>
           </div>
         </div>
         <div className="items-center">
-          <div className="p-2 flex justify-center">
+          <div className="flex justify-center p-2">
             <HiViewGridAdd className="text-[25px] text-[#6E3CBC]" />
           </div>
-          <div className="p-2 flex text-center justify-center">
+          <div className="flex justify-center p-2 text-center">
             <p>Computer & Laptop</p>
           </div>
         </div>
         <div className="items-center">
-          <div className="p-2 flex justify-center">
+          <div className="flex justify-center p-2">
             <MdViewComfy className="text-[25px] text-[#B000B9]" />
           </div>
-          <div className="p-2 flex text-center justify-center">
+          <div className="flex justify-center p-2 text-center">
             <p>Gamming</p>
           </div>
         </div>
         <div className="items-center">
-          <div className="p-2 flex justify-center">
+          <div className="flex justify-center p-2">
             <MdSportsBasketball className="text-[25px] text-[#FF5F7E]" />
           </div>
-          <div className="p-2 flex text-center justify-center">
+          <div className="flex justify-center p-2 text-center">
             <p>gaming</p>
           </div>
         </div>
         <div className="items-center">
-          <div className="p-2 flex justify-center">
+          <div className="flex justify-center p-2">
             <MdSportsKabaddi className="text-[25px] text-[#FFAB4C]" />
           </div>
-          <div className="p-2 flex text-center justify-center">
+          <div className="flex justify-center p-2 text-center">
             <p>Property</p>
           </div>
         </div>
         <div className="items-center">
-          <div className="p-2 flex justify-center">
+          <div className="flex justify-center p-2">
             <SiEpicgames className="text-[25px] text-[#753188]" />
           </div>
-          <div className="p-2 flex text-center justify-center">
+          <div className="flex justify-center p-2 text-center">
             <p>Kids Fashion</p>
           </div>
         </div>
         <div className="items-center">
-          <div className="p-2 flex justify-center">
+          <div className="flex justify-center p-2">
             <AiOutlineCar className="text-[25px] text-[#9AE66E]" />
           </div>
-          <div className="p-2 flex text-center justify-center">
+          <div className="flex justify-center p-2 text-center">
             <p>Sports</p>
           </div>
         </div>

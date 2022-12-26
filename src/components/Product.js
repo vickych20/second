@@ -32,8 +32,8 @@ export default function Product() {
     <div>
       <div className="font-bold text-[#413F42] text-[20px] flex gap-3 items-center mb-4">
         <div className="font-bold text-[20px] text-[#413F42]">
-          <p className="px-[4%] xl:text-[25px] lg:text-[20px] md:text-[16px] sm:text-[14px] text-[14px]">
-            Today is only for you
+          <p className="xl:text-[25px] lg:text-[20px] md:text-[16px] sm:text-[14px] text-[14px]">
+            Now Easier to Choose
           </p>
         </div>
         <div>
@@ -42,24 +42,21 @@ export default function Product() {
           </button>
         </div>
       </div>
-      <div className="w-full">
-        <div className="flex flex-wrap justify-around min-w-full">
-          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
+      <div className="w-full p-4">
+        <div className="flex flex-wrap min-w-full gap-3">
+         
+            <Card />
+        
+          
+            <Card />
+          
+            <Card />
+          
+            <Card />
+          
             <Card />
           </div>
-          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
-            <Card />
-          </div>
-          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
-            <Card />
-          </div>
-          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
-            <Card />
-          </div>
-          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
-            <Card />
-          </div>
-        </div>
+        
       </div>
     </div>
   );

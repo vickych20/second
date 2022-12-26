@@ -54,7 +54,7 @@ export default function Big() {
   return (
     <div>
       <div className="w-full">
-        <div className="flex flex-wrap justify-around min-w-full">
+        <div className="flex flex-wrap min-w-full">
           <Card />
           <Card />
           <Card />

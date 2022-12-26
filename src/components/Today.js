@@ -48,7 +48,7 @@ export default function Today() {
   return (
     <div className="py-4">
       <div className="font-bold text-[20px] text-[#413F42]">
-        <p className="px-[4%] xl:text-[25px] lg:text-[20px] md:text-[16px] sm:text-[14px] text-[14px]">
+        <p className="xl:text-[25px] lg:text-[20px] md:text-[16px] sm:text-[14px] text-[14px]">
           Today is only for you
         </p>
       </div>
@@ -58,7 +58,7 @@ export default function Today() {
         <Card />
         <Card />
         <Card /> */}
-      <div className="flex flex-wrap justify-around min-w-full">
+      <div className="flex flex-wrap min-w-full r">
         {Keybord.map((item) => (
           <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
             <Card
@@ -80,7 +80,7 @@ export default function Today() {
         <Card />
         <Card />
         <Card /> */}
-      <div className="flex flex-wrap justify-around min-w-full">
+      <div className="flex flex-wrap min-w-full">
         {Keybord.map((item) => (
           <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
             <Card
