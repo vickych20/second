@@ -53,13 +53,18 @@ const Card = () => {
 export default function Big() {
   return (
     <div>
-      <div className="w-full">
-        <div className="flex flex-wrap min-w-full">
+      <div className="flex flex-wrap lg:grid-cols-5 md:grid-cols-3 justify-around  min-w-full my-4 sm:grid-cols-3 gap-y-4 max-[640px]:grid-cols-2 max-[426px]:grid-cols-1">
+        <div className="flex flex-wrap justify-center min-w-full">
           <Card />
           <Card />
           <Card />
           <Card />
           <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />  
         </div>
       </div>
     </div>

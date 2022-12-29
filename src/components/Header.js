@@ -6,14 +6,14 @@ export default function Header() {
   return (
     <div className="">
       <div className="w-full border-b-[1px] border-gray-300">
-        <div className="flex justify-between items-center text-[10px]">
+        <div className="flex justify-between items-center text-[10px] p-4">
           <div className="shrink-0">
             <img
               src="https://looka.com/wp-content/themes/looka/images/logos/looka_logo_black.svg"
               alt="BrandCrowd"
               width="73px"
               height="28px"
-              class="tw-w-32 md:tw-w-44"
+              className="tw-w-32 md:tw-w-44"
               data-v-af735d2c=""
             ></img>
           </div>
@@ -82,7 +82,7 @@ export default function Header() {
           <p className="border-1"></p>
         </div>
         {/* <hr></hr> */}
-        <div className="flex gap-[9px] py-3 text-[10px] max-md:hidden">
+        <div className="flex gap-[9px] py-3 text-[10px] max-md:hidden mx-4">
           <div>
             <p>Popular Search:</p>
           </div>
@@ -110,19 +110,19 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="w-full grid gap-x-4 min-w-full px-4 my-4" style={{
+      <div className="grid w-full min-w-full px-4 my-4 gap-x-4" style={{
         gridTemplateColumns: "2fr 5fr"
       }}>
         <img
           src="https://img.freepik.com/free-vector/super-sale-banner-design-vector-illustration_1035-14931.jpg?size=338&ext=jpg&ga=GA1.2.79438395.1669983810"
           alt=""
-          className="h-full w-full"
+          className="w-full h-full"
         />
 
         <img
           src="https://img.freepik.com/premium-vector/vector-illustration-durga-puja-sale-banner_181203-10184.jpg?size=626&ext=jpg&ga=GA1.2.79438395.1669983810"
           alt=""
-          className="h-full w-full"
+          className="w-full h-full"
         />
       </div>
     </div>

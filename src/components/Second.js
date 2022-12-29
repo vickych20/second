@@ -65,7 +65,7 @@ export default function Second() {
         </h1>
       </div>
 
-      <div className="flex flex-wrap gap-3 justify-start  min-w-full my-4">
+      <div className="flex flex-wrap gap-3 justify-around  min-w-full my-4 ">
         {choices.map((choice) => {
             return (
               <div className="flex flex-col items-center bg-gray-100 shadow-md py-3">

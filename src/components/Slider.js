@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Card = ({image, name, price, tag, sold, onClick}) => {
   return (
     <div
-      className="h-[280px] w-[200px] max-w-[200px] max-h-[280px] shadow-lg rounded-lg"
+      className="max-w-[170px] max-h-[280px] shadow-lg rounded-lg"
       onClick={onClick}
     >
       <div
@@ -49,8 +49,10 @@ export default function Slider() {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="flex justify-between
-        items-center text-[#413F42] max-md:hidden">
+      <div
+        className="flex justify-between
+        items-center text-[#413F42] max-md:hidden"
+      >
         <div className="font-bold text-[20px] text-[#413F42]">
           <p className="xl:text-[25px] lg:text-[20px] md:text-[16px] sm:text-[14px] text-[14px]">
             November super Flash sale
@@ -62,9 +64,9 @@ export default function Slider() {
           <p className="bg-[#5b14ce] text-white p-1 rounded-md">39</p>
         </div>
       </div>
-      <div className="flex flex-wrap min-w-full">
+      <div className="grid flex-wrap lg:grid-cols-5 md:grid-cols-3 justify-around  min-w-full my-4 sm:grid-cols-3 gap-y-4 max-[640px]:grid-cols-2 max-[426px]:grid-cols-1 max-[426px]:content-center">
         {Products.map((item) => (
-          <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
+          <div className="display-contents justify-evenly items-center text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 self-center">
             <Card
               onClick={() => navigate(`/product/${item.id}`)}
               image={item.image}

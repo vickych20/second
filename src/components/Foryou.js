@@ -60,7 +60,7 @@ export default function Foryou() {
           Today is only for
         </p>
       </div>
-      <div className="flex flex-wrap min-w-full r">
+      <div className="grid flex-wrap lg:grid-cols-5 md:grid-cols-3 justify-around  min-w-full my-4 sm:grid-cols-3 gap-y-4 max-[640px]:grid-cols-2 max-[426px]:grid-cols-1">
         {Our.map((item) => (
           <div className="flex justify-between items-center  text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4 w-[200px] m-3 shrink-0">
             <Card
@@ -89,7 +89,6 @@ export default function Foryou() {
             />
           </div>
         ))}
-     
       </div>
     </div>
   );

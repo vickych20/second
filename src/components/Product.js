@@ -42,8 +42,8 @@ export default function Product() {
           </button>
         </div>
       </div>
-      <div className="w-full p-4">
-        <div className="flex flex-wrap min-w-full gap-3">
+      <div className="grid flex-wrap lg:grid-cols-5 md:grid-cols-3 justify-around  min-w-full my-4 sm:grid-cols-3 gap-y-4 max-[640px]:grid-cols-2 max-[426px]:grid-cols-1 gap-x-[5px]">
+        {/* <div className="flex justify-evenly items-center text-[13px] text-[#3C4048] leading-loose	rounded-lg  sm:leading-4"> */}
           <Card />
           <Card />
           <Card />
@@ -52,6 +52,6 @@ export default function Product() {
           <Card />
         </div>
       </div>
-    </div>
+    
   );
 }
